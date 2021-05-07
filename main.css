@@ -72,7 +72,7 @@ body {
 */
 
 .container, .grid {
-	margin: 0 auto;
+	margin: 0 auto; /* horizontal vertical; auto = center */
 	width: 960px;
 }
 
@@ -124,7 +124,7 @@ body {
 .row {
 	background: rgba(255, 255, 255, 0.9);
 	padding: 66px 0 44px 0;
-	width: 960px;
+	min-width: 960px;
 }
 
 .row-alt {
@@ -259,6 +259,15 @@ p a {
 	text-align: right;
 }
 
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
+
 /*
   ========================================
   Primary header
@@ -330,4 +339,22 @@ p a {
 	padding-bottom: 44px;
 	color: #648880;
 	font-size: 14px;
+}
+
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+
+.speaker-info {
+	border: 1px solid #dfe2e5;
+	border-radius: 5px;
+	margin-top: 88px;
+	padding: 22px 0;
+	text-align: center;
+}
+
+.speaker {
+	margin-bottom: 44px;
 }
